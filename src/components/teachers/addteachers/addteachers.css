@@ -1,0 +1,137 @@
+
+.addcardstyle{
+    background-color: white;
+    border-radius: 20px;
+}
+.addcardstyle h3{
+    background-color: rgba(77, 68, 181, 1);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px 20px 0px 0px;
+}
+.formdivspacing{
+    padding: 20px;
+    gap: 10px;
+}
+.formdiv label{
+
+color:rgba(48, 57, 114, 1);
+}
+.formdiv{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    grid-gap: 20px;
+    grid-auto-columns: auto;
+}
+.addinputstyle{
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.addinputstyle input{
+    border: 1px solid rgba(193, 187, 235, 1);
+    border-radius: 5px;
+    padding: 8px;
+    outline: none;
+    color: rgba(160, 152, 174, 1);
+}
+
+.addbtndiv{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* .photoinput{
+    width: 100px;
+    height: 100px;
+    border-style: dashed !important;
+} */
+.photoinputdiv{
+    padding: 0px 20px;
+    display: flex;
+    font-weight: 400;
+    font-size: 10px;
+    width: 120px;
+    border-radius: 5px;
+    height: 120px;
+    border: 1px dashed rgba(160, 152, 174, 1);
+    align-items: center;
+    text-wrap: balance;
+}
+textarea {
+    padding: 8px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgba(193, 187, 235, 1);
+}
+
+.photoinput[type="file"] {
+    width: 120px;
+    height: 130px;
+    border-style: dashed !important;
+    position: relative;
+    /* display: none; */
+}
+.photoinput::before{
+    content: "Drag and drop or click here to select file ";
+    width: 80px;
+   text-wrap: wrap;
+   position: absolute;
+   font-size: 10px;
+   top: 40px;
+   left: 20px;
+    /* border: 2px solid black; */
+}
+.photoinput::-webkit-file-upload-button{
+    display: none !important;
+}
+/* .photoinput{
+    display: none !important;
+} */
+
+.inputyear{
+    width: 100%;
+    gap: 10px;
+    display: flex;
+    & input{
+        width: 100%;
+    }
+}
+  
+
+.addbtndiv button{
+    padding: 15px;
+    border-radius: 40px;
+}
+.savedraftbtn{
+    border: 2px solid rgba(77, 68, 181, 1);
+    background-color: transparent;
+    color: rgba(77, 68, 181, 1);
+}
+.addsubmit {
+    background-color: rgba(77, 68, 181, 1);
+    color: white;
+    border: none;
+}
+
+
+
+@media (max-width: 720px){
+    .formdiv{
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 550px){
+    .addstdformdiv{
+        grid-template-columns: 1fr;
+    }
+    .inputyear{
+        flex-wrap: wrap;
+    }
+}

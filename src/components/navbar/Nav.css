@@ -1,0 +1,42 @@
+/* 
+.sidenav{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 270px;
+    min-height: 100vh;
+    background-color: #4D44B5;
+    padding: 40px 0px 0px 35px;
+}
+.navlogo{
+    display: flex;
+    align-items: center;
+    
+    gap: 10px;
+}
+.navlogo img{
+    width: 40px;
+    height: 45px;
+    border-radius: 16px;
+    
+}
+.navlogo h2{
+    color: white;
+}
+
+.sidenav ul{
+    list-style: none;
+}
+.icon{
+    font-size: 30px;
+}
+.sidenav ul li{
+    
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    color: #C1BBEB;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 16px 20px;
+} */

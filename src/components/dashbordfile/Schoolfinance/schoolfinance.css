@@ -1,0 +1,10 @@
+
+
+.schoolfinance{
+    width: 100%;
+}
+.schoolfinance .financechart{
+    width: 100%;
+    min-width: 400px;
+    height: 300px;
+}

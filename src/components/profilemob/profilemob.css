@@ -1,0 +1,44 @@
+.profilemob{
+    display: none;
+}
+.mobdropdown{
+    position: absolute;
+    list-style: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 1);
+    cursor: pointer;
+   padding: 10px;
+   top: 20;
+   right: 10px;
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+.mobdropdown::before{
+    position: absolute;
+    content: '';
+    /* border: 2px solid black; */
+    top: -3px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(50deg);
+    background-color: rgba(77, 68, 181, 1);
+
+}
+.profilename{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+
+.mobprofileimg{
+    width: 40px !important;
+    height: 40px !important;
+}
+/* .mobdrop{
+    right: 25px;
+} */

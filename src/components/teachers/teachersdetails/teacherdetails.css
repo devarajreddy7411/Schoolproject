@@ -1,0 +1,199 @@
+.teacherdetails{
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 30px;
+    background-color: #F3F4FF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+
+.teacherdetalsbody{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 30px;
+}
+
+.cardstyle1{
+    position: relative;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction:column;
+    gap: 30px;
+    height: fit-content;
+    /* border: 5px solid black; */
+    
+}
+.coverimg{
+    width: 100%;
+    height: 140px;
+    background-color: rgba(77, 68, 181, 1);
+    border-radius: 20px 20px 0px 0px;
+    
+}
+.profileimg{
+    position: absolute;
+    top: 44px;
+    left: 36px;
+    width: 170px;
+    height: 170px;
+    border: 7px solid white;
+    border-radius: 50%;
+    background-color: white;
+}
+.cardcontent{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px 60px;
+    gap: 30px;
+}
+.cardcontent p{
+    text-wrap: balance;
+}
+.cardstyle1 .threedotsbtn{
+    display: flex;
+    justify-content: flex-end;
+    /* float: right; */
+    height: fit-content;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+    margin: 0px 20px;
+    background: none; 
+    border: none;     
+}
+.eductionlist{
+    padding-left: 30px;
+    
+}
+.eductionlist li{
+    margin-bottom: 15px;
+}
+.eductionlist li ul{
+    list-style: none;
+    margin-top: 10px;
+color: rgba(160, 152, 174, 1);
+
+}
+
+.mainname{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 30px;
+    font-weight: 700;
+}
+.mainname span{
+    font-weight: 400;
+    color: rgba(160, 152, 174, 1);
+    font-size: 16px;
+}
+
+.teacherdetails h4{
+    line-height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+}
+.adressdiv{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 30px;
+}
+.adressdiv p{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.adressdiv .icon{
+    background-color: rgba(251, 125, 91, 1);
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    /* width: 60px; */
+    
+    /* height: 60px; */
+    border-radius: 50%;
+}
+
+.teacherssideevents{
+    display: flex;flex-direction: column;
+    gap: 30px;
+    width: 300px;
+}
+.teacherssideevents p{
+    color: rgba(160, 152, 174, 1);
+    font-size: 16px;
+}
+.teachersidecards{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+   
+    width: 300px;
+    /* text-wrap: nowrap; */
+    border-left: 10px solid  rgba(77, 68, 181, 1);
+    border-radius: 10px;
+    background-color: white;
+}
+.teachersidecards h4{
+        font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.teachersidecards p{
+    display: flex;gap: 10px;
+    align-items: center;
+}
+.teachersidecards .icon1{
+    color:rgba(251, 125, 91, 1) ;
+}
+.teachersidecards .icon2{
+    color:rgba(252, 196, 62, 1) ;
+}
+
+
+.scheduledetails{
+    color: rgba(48, 57, 114, 1);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.getbackbtn{
+    border: none;
+    background-color: transparent;
+    width: 50px;
+    font-size: 20px;
+}
+
+
+@media (max-width : 1320px){
+    .teacherdetalsbody{
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media (max-width : 900px){
+    .Teacherhead{
+        flex-wrap: wrap;
+        padding-top: 20px;
+    }
+  
+}
+@media (max-width : 780px){
+    .teacherdetails{
+        padding-top: 60px;
+    }
+   
+}

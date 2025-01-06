@@ -1,0 +1,84 @@
+
+.recentstudents{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 25px;
+}
+.rshead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  margin-bottom: 20px;
+}
+.rshead h3{
+    font-weight: 600;
+    font-size: 16px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.rshead h3 span{
+    font-size: 12px;
+    font-weight:200 ;
+}
+.rshead button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 10px; */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #4D44B5;
+    color: white;
+
+}
+.rsbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.rsboxnameimg{
+    align-items: center;
+    display: flex;
+    gap: 10px;
+}
+.rsboxnameimg img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.rsboxnameimg p{
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    color: #303972;
+    font-weight: 400;
+}
+.rsboxnameimg p span{
+    font-size: 12px;
+    color: #A098AE;
+}
+.rsbox button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid #A098AE; 
+    color: #A098AE;
+}
+
+
+.recentstudents .viewmore{
+    color: #4D44B5;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    background-color: #4D44B51A;
+}

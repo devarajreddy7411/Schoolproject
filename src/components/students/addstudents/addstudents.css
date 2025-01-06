@@ -1,0 +1,42 @@
+.addstdformdiv{
+    display: grid;
+    grid-template-columns: .15fr 1fr;
+}
+.payselectstyle{
+    display: flex;gap: 10px;
+    font-size: 12px;
+    color: rgba(160, 152, 174, 1);
+}
+.payselectstyle  input[type="radio"]:checked {
+    
+    accent-color: rgba(77, 68, 181, 1);
+}
+.selectgrade{
+    width: 100%;
+    height: 35px;
+    outline: none;
+    color: rgba(160, 152, 174, 1);
+    border-color:rgba(193, 187, 235, 1) ;
+}
+form input:invalid {
+    border: 2px dashed red;
+  }
+  
+  form input:invalid:required {
+    background-image: linear-gradient(to right, pink, lightgreen);
+  }
+  
+  form input:valid {
+    border: 2px solid black;
+  }
+
+
+
+  .addinputstyle label{
+    display: flex;
+    gap: 3px;
+  }
+  .error{
+    font-size: 8px;
+    color: red;
+  }

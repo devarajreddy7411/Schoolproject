@@ -1,0 +1,163 @@
+ .pattern1{
+    width: 100%;
+    padding: 0px 30px 30px 30px; 
+    background-color: #F3F4FF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-height: 100vh;
+    height: 100%;
+}
+.topnavpattern1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.topnavpattern1_a{
+    display: flex;
+    align-items: center;
+}
+
+.bodytype1{
+    display: flex;  
+    gap: 30px;
+}
+.contentstyle1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+aside{
+    /* min-width: 300px;
+    max-width: 500px; */
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.boxstyle1{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.colorone{
+    color: rgba(160, 152, 174, 1);  
+}
+
+
+.paymentlistdiv{
+    min-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.paymentlist{
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.paymentlist p:nth-child(1){
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.paymentlist p:nth-child(2){
+    
+font-size: 14px;
+font-weight: 400;
+}
+.paymentlist p:nth-child(4){
+color: rgba(76, 188, 154, 1);
+    }
+
+
+.sidecards{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+    /* max-width: 300px; */
+    /* width: 300px; */
+    /* text-wrap: nowrap; */
+    border-left: 10px solid  rgba(77, 68, 181, 1);
+    border-radius: 10px;
+    background-color: white;
+}  
+.scheduledetails{
+    color: rgba(48, 57, 114, 1);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.scheduledetails p{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(160, 152, 174, 1);
+}
+.scheduledetails h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.sidecards h4{
+    font-size: 16px ;
+    font-weight: 600;
+    color: rgba(48, 57, 114, 1);
+} 
+.sidecards p{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(160, 152, 174, 1);
+} 
+.colororange{
+    color: rgba(251, 125, 91, 1);
+}
+.coloryellow{
+   
+color: rgba(252, 196, 62, 1) ;}
+
+.viewmore{
+    color: #4D44B5;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    border: none;
+    background-color: #4D44B51A;
+}
+
+
+.circlicon{
+    font-size: 60px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    background-color: rgba(255, 69, 80, 1);
+}
+
+@media (max-width: 900px){
+.bodytype1{
+    flex-wrap: wrap;
+}
+aside{
+    width: 100%;
+    /* flex-direction: row; */
+    /* align-items: center; */
+
+}
+aside div{
+    width: 280px;
+}
+
+}

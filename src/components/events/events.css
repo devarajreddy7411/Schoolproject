@@ -1,0 +1,83 @@
+/* @import 'react-big-calendar/lib/sass/styles';
+@import 'react-big-calendar/lib/addons/dragAndDrop/styles'; */
+
+.eventscalenderstyle {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.eventscalenderstyle .css-rhmlg1-MuiTypography-root-MuiDayCalendar-weekDayLabel{
+    justify-content: space-between !important;
+}
+
+.eventscalenderstyle .css-23p0if-MuiButtonBase-root-MuiPickersDay-root:not(.Mui-selected){
+    outline: 2px solid rgba(77, 68, 181, 1);
+    /* border: 2px double black; */
+}
+
+.eventscalenderstyle .css-flbe84-MuiDayCalendar-weekContainer button{
+    
+    border: 2px solid rgba(160, 152, 174, 1) !important;
+    width: 80px !important;
+    height: 100px !important;
+
+    border-radius: 10px !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 10px;
+    color: rgba(48, 57, 114, 1);
+}
+
+.eventscalenderstyle .css-1wy8uaa-MuiButtonBase-root-MuiPickersDay-root.Mui-selected:hover{
+    background-color: rgba(77, 68, 181, 1) !important;
+    color: white !important;
+}
+.eventscalenderstyle .css-1wy8uaa-MuiButtonBase-root-MuiPickersDay-root.Mui-selected{
+    color: white !important;
+    background-color: rgba(77, 68, 181, 1) !important;
+}
+.eventscalenderstyle .css-23p0if-MuiButtonBase-root-MuiPickersDay-root.Mui-selected {
+    color: white !important;
+    background-color: rgba(77, 68, 181, 1) !important;
+}
+.eventscalenderstyle .css-1t0788u-MuiPickersSlideTransition-root-MuiDayCalendar-slideTransition{
+    overflow: visible !important;
+}
+.eventscalenderstyle .css-i5q14k-MuiDayCalendar-header{
+    width: 100% !important;
+    justify-content: space-between !important;
+}
+.eventscalenderstyle .css-1rtg91x-MuiDateCalendar-root{
+    width: 800px !important;
+}
+.eventscalenderstyle .css-flbe84-MuiDayCalendar-weekContainer{
+    justify-content: space-between !important;
+}
+.eventscalenderstyle .css-2jurxj-MuiDayCalendar-slideTransition{
+    min-height: 600px !important;
+    justify-content: space-between !important;
+}
+.eventscalenderstyle .css-1rtg91x-MuiDateCalendar-root{
+    max-height: 600px;
+}
+.eventscalenderstyle .css-1rtg91x-MuiDateCalendar-root{
+    /* overflow: visible; */
+    min-height: 700px !important;
+}
+.eventscalenderstyle .css-12p2adl-MuiDayCalendar-monthContainer{
+    min-height: 600px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.eventshedule{
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}

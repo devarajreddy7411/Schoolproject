@@ -1,0 +1,124 @@
+
+.foodpage .bodytype1{
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+
+.foodcardhead{
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.foodcardhead h4{
+    font-size: 20px;
+    font-weight: 700;
+}
+.foodcardhead ul{
+    padding: 0px 10px;
+    display: flex;
+    border-bottom: 1px solid rgba(193, 187, 235, 1);
+}
+.foodcardhead ul li{
+    color: rgba(160, 152, 174, 1);
+    font-size: 14px;
+    font-weight: 600;
+    list-style: none;
+    padding: 20px;
+    
+}
+.active{
+    border-bottom: 3px solid rgba(77, 68, 181, 1);
+    color: rgba(77, 68, 181, 1);
+}
+
+.foodcardhead ul li:hover{
+    border-top: 1px solid rgba(193, 187, 235, 1);
+    
+}
+
+
+.foodcardbody{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.circlebar{
+    width: 40px !important;
+   
+}
+.CircularProgressbar .CircularProgressbar-path, .CircularProgressbar-text{
+    fill : rgba(77, 68, 181, 1) !important;
+    stroke : rgba(77, 68, 181, 1) !important;
+}
+
+
+.foodcard{
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 700;
+    min-width: 900px;
+    gap: 10px;
+}
+.foodcard span{
+    font-size: 16px;
+    font-weight: 400;
+   color:  rgba(160, 152, 174, 1);
+}
+
+.foodcard img{
+    width: 120px;
+    height: 120px;
+    border-radius: 12px;
+}
+.foodname {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    gap: 10px;
+    height: 100%;
+    width: 330px;
+}
+.foodname span{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    height: 40px;
+    width: 100px;
+    background-color: rgba(77, 68, 181, 1);
+    font-size: 14px;
+    font-weight: 400;
+}
+.foodrating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.goldstar{
+    color: gold;
+}
+.foodicon{
+    font-size: 70px;
+    color: rgba(77, 68, 181, 1);
+}
+.ftempone{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.ftempone p{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

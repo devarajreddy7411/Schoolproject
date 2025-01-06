@@ -1,0 +1,217 @@
+.student {
+    width: 100%;
+    min-height: 100vh;
+    padding: 0px 30px 30px;
+    background-color: #F3F4FF;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.studenthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 0px 20px; */
+}
+
+.searchbardiv {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+  
+}
+
+.searchbardiv .inputdiv {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+
+}
+
+.searchbardiv .inputdiv input {
+    border: none;
+    outline: none;
+}
+
+.newoldfilter {
+    display: flex;
+    gap: 15px;
+
+}
+
+.newoldfilter select {
+    color: #4D44B5;
+    padding: 10px 15px;
+    border: 2px solid #4D44B5;
+    border-radius: 30px;
+    /* font-size: 1px ; */
+    font-weight: 600;
+}
+
+.newoldfilter button {
+    /* font-size: 18px ; */
+    font-weight: 600;
+    padding: 10px 15px;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    background-color: #4D44B5;
+}
+
+
+.tablecontent {
+    overflow-x: scroll;
+    text-wrap: nowrap;
+    /* width: 100%; */
+    background-color: white;
+    border-radius: 40px;
+    padding: 0px 0px 30px 0px; 
+    scrollbar-width: none;
+}
+.tablecontent table {
+    border-collapse: collapse;
+    border-left: 5px solid white;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+  
+    width: 100%;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.tablecontent table td {
+    /* height: 100px; */
+    padding-right: 10px;
+    text-align: start;
+    height: 80px;
+    /* display: flex; */
+    /* border-bottom: 2px solid #C1BBEB;    */
+    /* background-color: red; */
+}
+
+.tablecontent table td input {
+    outline: none;
+    /* color: #4D44B5; */
+    /* background-color: #4D44B5; */
+
+}
+
+
+
+.tablecontent table th {
+    /* padding: 10px 20px; */
+    text-align: start;
+    height: 80px;
+    /* background-color: red; */
+}
+
+/* .tablecontent table tr{
+    
+} */
+
+.checkboxtd{
+    width: 40px;
+
+}
+.chekboxstyle{
+    margin: auto 20px;
+}
+.chekstyle {
+
+    border-left: 5px solid #4D44B5;
+    border-top: 1px solid #C1BBEB;
+    border-bottom: 1px solid #C1BBEB;
+}
+
+table .contacticon {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #C1BBEB;
+    color: rgba(77, 68, 181, 1);
+    /* margin: 10px; */
+    /* padding: 10px; */
+}
+
+table .contacticon:hover {
+    transform: scale(1.5, 1.5);
+    /* font-size: 22px; */
+}
+
+.threedots{
+border: none;
+padding: 10px;
+border-radius: 50%;
+background: none;
+}
+.threedots:hover{
+    /* font-size: 20px; */
+    transform: scale(2,2);
+}
+
+.imgnamebox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.imgnamebox img{
+    width: 44px;
+    border-radius: 50%;
+}
+.stdid{
+    color: #4D44B5;
+    font-size: 16px;
+    font-weight: 600;
+}
+.stddate{
+    font-size: 12px;
+    color: rgba(160, 152, 174, 1);
+}
+.stdpname{
+    font-size: 12px;
+    font-weight: 400;
+    color:rgba(48, 57, 114, 1) ;
+    
+}
+
+.stdgrade p{
+    width: 70px;
+    height: 35px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    background-color: #4D44B5;
+}
+
+.pegination{
+    display: flex;
+    align-items: center;
+    padding: 10px 30px;
+}
+.peginationbtndiv .arrowbtn{
+    border: none;
+    background-color: transparent;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgba(160, 152, 174, 1);
+}
+.peginationbtndiv .arrowbtn:hover {
+
+    transform: scale(1.5,1.5);
+   
+}

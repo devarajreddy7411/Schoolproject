@@ -1,0 +1,117 @@
+.finance {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 35px 30px;
+    background-color: #F3F4FF;
+}
+.finance .searchbox{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    /* padding: 20px; */
+    border-radius: 30px;
+}
+.finance .searchbox input{
+    /* height: 20px; */
+    outline: none;
+    border: none;
+}
+.financehead {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+    color: rgba(48, 57, 114, 1);
+}
+.financeheadright{
+    display: flex;
+    align-items: center;
+}
+
+.financestatus{
+    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-between;
+}
+.fianancstatsboxs{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+.fianancstatsboxs .imgdiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: white;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+}
+.imgdivtecher{
+    background-color: rgba(251, 125, 91, 1);
+}
+.imgdivstudent{
+    background-color: rgba(77, 68, 181, 1);
+}
+.imgdivschbal{
+    background-color: rgba(252, 196, 62, 1);
+}
+.fianancstatsboxs img{
+    width: 100px;
+}
+.contentstatus{
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(160, 152, 174, 1);
+}
+.count{
+    font-size: 25px;
+    font-weight: 700;
+    color: rgba(48, 57, 114, 1);
+}
+
+.containarbox{
+    width: 100%;
+    /* flex-wrap: ; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.finance .unpaidstudent{
+    max-width: 690px;
+   
+}
+.finance .unpaidstudent .namediv{
+    font-size: 14px;
+    font-weight: 400;
+}
+.finance .schoolexpences{
+    max-width: 490px;
+    height: auto;
+}
+
+
+@media screen and (max-width: 900px) {
+.containarbox{
+    flex-wrap: wrap;
+}
+.finance .unpaidstudent{
+    max-width: 100%;
+}
+.finance .schoolexpences{
+    max-width: 100%;
+}
+}

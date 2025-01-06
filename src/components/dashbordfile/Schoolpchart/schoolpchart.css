@@ -1,0 +1,61 @@
+.chartsize .recharts-surface{
+    width: 100% !important; 
+    height: 100% !important;
+}
+
+.wavechart{
+    overflow-x: scroll;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+} 
+.wavechart .content{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.rightcontent {
+    display: flex;
+    gap: 20px;
+}
+.rightcontent1 h5 {
+    display: flex;
+ gap: 10px;
+ 
+}
+.colorpartanone{
+    font-size:12px ;
+ font-weight: 400;
+ color: rgba(160, 152, 174, 1);
+}
+.rightcontent2 h5 {
+    display: flex;
+    gap: 10px;
+   
+}
+.rightcontent p {
+    padding-left: 30px;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+
+.circlediv{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    
+}
+.rightcontent1 h5 span{
+    border: 4px solid #FCC43E;
+}
+.rightcontent2 h5 span{
+    border: 4px solid #FB7D5B;
+}
+.chartsize{
+    width: 100%;
+    min-width: 400px;
+    height: 300px;
+}

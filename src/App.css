@@ -1,0 +1,11 @@
+
+.headings{
+    color: #303972;
+    font-weight: 800;
+    font-size: clamp(1rem,1.8vw,2.046rem);
+}
+.subheadings{
+font-size: 20px;
+font-weight: 700;
+color: #303972;
+}

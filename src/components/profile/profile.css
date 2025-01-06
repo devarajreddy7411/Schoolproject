@@ -1,0 +1,105 @@
+/* .profile{
+display: flex;
+gap: 15px;
+align-items: center;
+
+padding: 30px 20px;
+} */
+.profilelapto{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    /* height: 130px; */
+    /* justify-content: center; */
+    padding: 30px 20px; 
+}
+.profilebutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    width: 40px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+}
+.profilebutton:hover{
+    background-color: antiquewhite;
+}
+.profpicdiv{
+    gap: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.profpicdiv p{
+    text-transform: capitalize;
+    text-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.profpicdiv span{
+    text-transform: capitalize;
+    font-size: 12px;
+}
+.dpdiv{
+    position: relative;
+}
+.dpdiv img{
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%;
+
+}
+
+.profiledropdown{
+    position: absolute;
+    list-style: none;
+    color: white;
+    border-radius: 20px;
+    background-color: rgba(77, 68, 181, 1);
+    cursor: pointer;
+   padding: 10px;
+   top: 20;
+   right: 30px;
+   z-index: 1;
+}
+.profiledropdown::before{
+    position: absolute;
+    content: '';
+    /* border: 2px solid black; */
+    top: -3px;
+    right: 15px;
+    width: 15px;
+    height: 15px;
+    transform: rotate(50deg);
+    background-color: rgba(77, 68, 181, 1);
+
+}
+.profiledropdown :last-child{
+    color: rgba(160, 152, 174, 1);
+}
+.profiledropdown li{
+    padding: 10px 20px;
+}
+.profiledropdown li:hover{
+    transform: scale(1.1,1);
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+    /* .profilemob{
+        display: flex;
+    } */
+    .profilelapto{
+        display: none;
+    }
+    
+}

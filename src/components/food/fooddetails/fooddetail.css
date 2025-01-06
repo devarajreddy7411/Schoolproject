@@ -1,0 +1,127 @@
+
+
+.sidecardstyle2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    background-color: white;
+    padding: 20px;
+}
+.foodstdcoment{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+.foodstdcomentperson{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.foodstdcomentperson img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+.foodstdcomentperson h4{
+    display: flex;
+    font-size: 15px;
+    gap: 10px;
+    flex-direction: column;
+}
+.foodstdcomentperson h4 span{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(160, 152, 174, 1);
+}
+
+.fooddetaiscard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+.fooddetaiscard .threedots{
+    position: absolute;
+    right: 0;
+    /* top: 0;padding: 10px; */
+    font-size: 40px;
+}
+.fooddetaiscard1 {
+    display: flex;
+    
+    gap: 20px;
+}
+.fooddetaiscard1-a{
+    display: flex;flex-direction: column;gap: 20px;
+}
+.fooddetaiscard2 {
+    display: flex;
+    gap: 40px;
+}
+.fooddetaiscard2 .foodrating{
+
+}
+
+.fooddetaiscard img{
+    width: 300px;
+    height: 220px;
+    border-radius: 12px;
+}
+.fooddetailname{
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+.fooddetailname span{
+    background-color: rgba(77, 68, 181, 1);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    color: white;
+    height: 40px;
+    width: 100px;
+}
+.foodingrediants{
+    display: flex;
+    gap: 40px;
+
+}
+.list {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   padding-left: 30px;
+   font-size: 16px;
+   font-weight: 400;
+   color: rgba(160, 152, 174, 1);
+}
+
+
+
+@media (max-width : 1257px){
+    .fooddetaiscard1{
+        flex-wrap: wrap;
+    }
+    .foodingrediants{
+        flex-wrap: wrap;
+    }
+    .fooddetaiscard2{
+        flex-wrap: wrap;
+    }
+}
+@media (max-width : 435px){
+    .fooddetaiscard1{
+        padding-top: 40px;
+    }
+    .fooddetaiscard img{
+        width: 100%;
+    }
+}

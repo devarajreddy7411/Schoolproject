@@ -1,0 +1,56 @@
+.schoolexpences{
+    width: 100%;
+    height:100%;
+    
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    overflow-x: scroll;
+    scrollbar-width: none;
+}
+.schoolexpences2 h2{
+    margin: 20px 0px 20px;
+    color: rgba(54, 59, 100, 1);
+}
+.schoolexpences2{
+    display: flex;flex-direction: column;
+    gap: 30px;
+}
+.schoolexpencdiv{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.scexpcard{
+    width: 440px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.schoolexppagination{
+    min-width: 440px;
+}
+.scexpcard img{
+    border-radius: 50%;
+}
+.scexpcard .iddate{
+
+    display: flex;
+    flex-direction: column;
+}
+.scexpcard .iddate span{
+    font-size: 14px;
+    font-weight: 400;
+    color: rgba(160, 152, 174, 1);
+}
+.scexpcardsub1{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}

@@ -1,0 +1,11 @@
+.balancechart{
+    width: 100%;
+}
+
+.schexpfillter{
+    border-radius: 20px;
+    /* width: 100px; */
+    padding: 10px 20px;
+    color: rgba(77, 68, 181, 1);
+    border: 2px solid rgba(77, 68, 181, 1);
+}
