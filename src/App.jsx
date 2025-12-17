@@ -1,30 +1,17 @@
-
-import './App.css'
-import Home from './components/home/Home'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import React from 'react'
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import Login from './components/login/Login'
+import Home from './components/home/Home'
 
-
-// icons 
-
-
-
-function App() {
- 
-
+const App = () => {
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path='/dashbord' element={<Home/>}/>
-          <Route path='/' element={<Login/>}/>
-        </Routes>
-      </Router>
-
-    
-
-     
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/home/*" element={<Home />} />
+        <Route path="*" element={<Navigate to="/" replace />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

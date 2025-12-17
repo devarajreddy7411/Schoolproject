@@ -1,166 +1,148 @@
-import React,{ createContext,useState } from 'react'
+import React, { createContext, useState } from 'react'
+import { Routes, Route, NavLink, Navigate, useLocation } from 'react-router-dom'
 import './home.css'
-import Navbar from '../navbar/Navbar'
+
 import Dashboard from '../dashbordfile/dashbord/Dashboard'
 import Student from '../students/Student/Student'
-import Balancechart from '../finance/balancechart/Balancechart'
-import Schoolexpences from '../finance/schoolexpences/Schoolexpences'
-import Finance from '../finance/financemain/Finance'
 import Teachers from '../teachers/teacherspage/Teachers'
-import Teacherdetails from '../teachers/teachersdetails/Teacherdetails'
-import Studentdetails from '../students/studentdetails/Studentdetails'
 import Eventspage from '../events/Eventspage'
+import Finance from '../finance/financemain/Finance'
 import Foodpage from '../food/foodpage/Foodpage'
-import Fooddetail from '../food/fooddetails/Fooddetail'
-import { LuHome } from 'react-icons/lu'
-import { PiStudent } from 'react-icons/pi';
-import { LiaChalkboardTeacherSolid } from 'react-icons/lia';
-import { MdEvent } from 'react-icons/md';
-import { GiKnifeFork,GiReceiveMoney } from 'react-icons/gi';
-import { FaRegUser } from 'react-icons/fa';
-import { HiOutlineChatBubbleLeftRight } from 'react-icons/hi2';
-import { FiActivity } from 'react-icons/fi';
-import logo from './../../assets/logo.png'
-import { useLocation } from 'react-router-dom'
 import Chat from '../chat/Chat'
 import Users from '../users/Users'
 import Profilemob from '../profilemob/Profilemob'
 
+import { LuHome } from 'react-icons/lu'
+import { PiStudent } from 'react-icons/pi'
+import { LiaChalkboardTeacherSolid } from 'react-icons/lia'
+import { MdEvent } from 'react-icons/md'
+import { GiKnifeFork, GiReceiveMoney } from 'react-icons/gi'
+import { FaRegUser } from 'react-icons/fa'
+import { HiOutlineChatBubbleLeftRight } from 'react-icons/hi2'
 
+import logo from './../../assets/logo.png'
+
+export const Usercontext = createContext()
 
 const Home = () => {
-
-    let [render,setRender] = useState("dashboard")
-    let [mobnav,setMobnav] = useState(false)
-    let [mobnavlist,setMobnavlist] = useState(false)
-    let handlerender = (p) => {
-        setRender(p)
-        // setUserobj(userdata)
+    const location = useLocation()
+    const userdata = {
+        name: 'Admin',
+        userid: 'admin@gmail.com',
+        role: 'Admin'
     }
-    let Usercontext = createContext();
-    let location = useLocation();
-    let userdata = location.state
-    // console.log(userdata)
-    // let [userobj,setUserobj] = useState(userdata);
+    const [mobnav, setMobnav] = useState(false)
 
-    // console.log(userobj)
-    let handlenav = () => {
-        setMobnav(!mobnav)
+    // Helper function to check if current path matches
+    const isActivePath = (path) => {
+        // For home/dashboard, we need to check both
+        if (path === 'dashboard') {
+            return location.pathname.endsWith('/dashboard') || location.pathname.endsWith('/home') || location.pathname.endsWith('/home/')
+        }
+        return location.pathname.includes(`/${path}`)
     }
-
 
     return (
         <Usercontext.Provider value={userdata}>
-            <div className='home'>
-                {
-                    mobnav ? <div className="mobnav">
+            <div className="home">
 
-
-                        {
-                            mobnavlist ? '' : <div className='mobnav2'>
-                                <div className='navlogo2'>
-                                    <img src={logo} onClick={handlenav} alt="logo" />
-
-
-                                </div>
-                                <ul className='mobnavlist'>
-                                    <li onClick={() => handlerender("dashboard")} className={(render == "dashboard") ? "navselectedstyle" : ""}><LuHome className='icon' /> Dashboard</li>
-                                    <li onClick={() => handlerender('students')} className={(render == "students") ? "navselectedstyle" : ""}><PiStudent className='icon' /> Students</li>
-                                    <li onClick={() => handlerender('teachers')} className={(render == "teachers") ? "navselectedstyle" : ""}><LiaChalkboardTeacherSolid className='icon' /> Teachers</li>
-                                    <li onClick={() => handlerender('events')} className={(render == "events") ? "navselectedstyle" : ""}><MdEvent className='icon' /> Events</li>
-                                    <li onClick={() => handlerender('finance')} className={(render == "finance") ? "navselectedstyle" : ""}><GiReceiveMoney className='icon' /> Finance</li>
-                                    <li onClick={() => handlerender('food')} className={(render == "food") ? "navselectedstyle" : ""}><GiKnifeFork className='icon' /> Food</li>
-                                    <li onClick={() => handlerender('user')} className={(render == "user") ? "navselectedstyle" : ""}><FaRegUser className='icon' /> User</li>
-                                    <li onClick={() => handlerender('chat')} className={(render == "chat") ? "navselectedstyle" : ""}><HiOutlineChatBubbleLeftRight className='icon' /> Chat</li>
-                                    {/* <li onClick={() => handlerender('lastactivity')} className={(render == "lastactivity") ? "navselectedstyle" : ""}><FiActivity className='icon' /> Lastest Activity</li> */}
-                                </ul>
-                            </div>
-
-                        }
-
-                    </div> : <div className="mobnav1">
-                        <div className='navlogo'>
-                            <img src={logo} onClick={handlenav} alt="logo" />
-                            <Profilemob/>
-                        </div>
-
-                        {/* {
-                            mobnavlist ? '' : <ul className='mobnavlist'>
-                            <li onClick={() => handlerender("dashboard")} className={(render == "dashboard") ? "navselectedstyle" : ""}><LuHome className='icon' /> Dashboard</li>
-                            <li onClick={() => handlerender('students')} className={(render == "students") ? "navselectedstyle" : ""}><PiStudent className='icon' /> Students</li>
-                            <li onClick={() => handlerender('teachers')} className={(render == "teachers") ? "navselectedstyle" : ""}><LiaChalkboardTeacherSolid className='icon' /> Teachers</li>
-                            <li onClick={() => handlerender('events')} className={(render == "events") ? "navselectedstyle" : ""}><MdEvent className='icon' /> Events</li>
-                            <li onClick={() => handlerender('finance')} className={(render == "finance") ? "navselectedstyle" : ""}><GiReceiveMoney className='icon' /> Finance</li>
-                            <li onClick={() => handlerender('food')} className={(render == "food") ? "navselectedstyle" : ""}><GiKnifeFork className='icon' /> Food</li>
-                            <li onClick={() => handlerender('user')} className={(render == "user") ? "navselectedstyle" : ""}><FaRegUser className='icon' /> User</li>
-                            <li onClick={() => handlerender('chat')} className={(render == "chat") ? "navselectedstyle" : ""}><HiOutlineChatBubbleLeftRight className='icon' /> Chat</li>
-                            <li onClick={() => handlerender('lastactivity')} className={(render == "lastactivity") ? "navselectedstyle" : ""}><FiActivity className='icon' /> Lastest Activity</li>
-                        </ul>
-                        }
-                         */}
+                {/* ===== Mobile Header ===== */}
+                <div className="mobnav1">
+                    <div className="navlogo">
+                        <img src={logo} onClick={() => setMobnav(!mobnav)} alt="logo" />
+                        <Profilemob />
                     </div>
-                }
-                <nav className='sidenav'>
-                    <div className='navlogo'>
+                </div>
+
+                {/* ===== Mobile Menu ===== */}
+                {mobnav && (
+                    <div className="mobnav">
+                        <ul className="mobnavlist" onClick={() => setMobnav(false)}>
+                            <li className={isActivePath('dashboard') ? 'navselectedstyle' : ''}>
+                                <NavLink to="dashboard"><LuHome /> Dashboard</NavLink>
+                            </li>
+                            <li className={isActivePath('students') ? 'navselectedstyle' : ''}>
+                                <NavLink to="students"><PiStudent /> Students</NavLink>
+                            </li>
+                            <li className={isActivePath('teachers') ? 'navselectedstyle' : ''}>
+                                <NavLink to="teachers"><LiaChalkboardTeacherSolid /> Teachers</NavLink>
+                            </li>
+                            <li className={isActivePath('events') ? 'navselectedstyle' : ''}>
+                                <NavLink to="events"><MdEvent /> Events</NavLink>
+                            </li>
+                            <li className={isActivePath('finance') ? 'navselectedstyle' : ''}>
+                                <NavLink to="finance"><GiReceiveMoney /> Finance</NavLink>
+                            </li>
+                            <li className={isActivePath('food') ? 'navselectedstyle' : ''}>
+                                <NavLink to="food"><GiKnifeFork /> Food</NavLink>
+                            </li>
+                            <li className={isActivePath('users') ? 'navselectedstyle' : ''}>
+                                <NavLink to="users"><FaRegUser /> User</NavLink>
+                            </li>
+                            <li className={isActivePath('chat') ? 'navselectedstyle' : ''}>
+                                <NavLink to="chat"><HiOutlineChatBubbleLeftRight /> Chat</NavLink>
+                            </li>
+                        </ul>
+                    </div>
+                )}
+
+                {/* ===== Sidebar ===== */}
+                <nav className="sidenav">
+                    <div className="navlogo">
                         <img src={logo} alt="logo" />
-                        <h2 className='headings'>Akademi</h2>
+                        <h2 className="headings">Akademi</h2>
                     </div>
 
                     <ul>
-                        <li onClick={() => handlerender("dashboard")} className={(render == "dashboard") ? "navselectedstyle" : ""}><LuHome className='icon' /> Dashboard</li>
-                        <li onClick={() => handlerender('students')} className={(render == "students") ? "navselectedstyle" : ""}><PiStudent className='icon' /> Students</li>
-                        <li onClick={() => handlerender('teachers')} className={(render == "teachers") ? "navselectedstyle" : ""}><LiaChalkboardTeacherSolid className='icon' /> Teachers</li>
-                        <li onClick={() => handlerender('events')} className={(render == "events") ? "navselectedstyle" : ""}><MdEvent className='icon' /> Events</li>
-                        <li onClick={() => handlerender('finance')} className={(render == "finance") ? "navselectedstyle" : ""}><GiReceiveMoney className='icon' /> Finance</li>
-                        <li onClick={() => handlerender('food')} className={(render == "food") ? "navselectedstyle" : ""}><GiKnifeFork className='icon' /> Food</li>
-                        <li onClick={() => handlerender('user')} className={(render == "user") ? "navselectedstyle" : ""}><FaRegUser className='icon' /> User</li>
-                        <li onClick={() => handlerender('chat')} className={(render == "chat") ? "navselectedstyle" : ""}><HiOutlineChatBubbleLeftRight className='icon' /> Chat</li>
-                        {/* <li onClick={() => handlerender('lastactivity')} className={(render == "lastactivity") ? "navselectedstyle" : ""}><FiActivity className='icon' /> Lastest Activity</li> */}
+                        <li className={isActivePath('dashboard') ? 'navselectedstyle' : ''}>
+                            <NavLink to="dashboard"><LuHome /> Dashboard</NavLink>
+                        </li>
+                        <li className={isActivePath('students') ? 'navselectedstyle' : ''}>
+                            <NavLink to="students"><PiStudent /> Students</NavLink>
+                        </li>
+                        <li className={isActivePath('teachers') ? 'navselectedstyle' : ''}>
+                            <NavLink to="teachers"><LiaChalkboardTeacherSolid /> Teachers</NavLink>
+                        </li>
+                        <li className={isActivePath('events') ? 'navselectedstyle' : ''}>
+                            <NavLink to="events"><MdEvent /> Events</NavLink>
+                        </li>
+                        <li className={isActivePath('finance') ? 'navselectedstyle' : ''}>
+                            <NavLink to="finance"><GiReceiveMoney /> Finance</NavLink>
+                        </li>
+                        <li className={isActivePath('food') ? 'navselectedstyle' : ''}>
+                            <NavLink to="food"><GiKnifeFork /> Food</NavLink>
+                        </li>
+                        <li className={isActivePath('users') ? 'navselectedstyle' : ''}>
+                            <NavLink to="users"><FaRegUser /> User</NavLink>
+                        </li>
+                        <li className={isActivePath('chat') ? 'navselectedstyle' : ''}>
+                            <NavLink to="chat"><HiOutlineChatBubbleLeftRight /> Chat</NavLink>
+                        </li>
                     </ul>
-                    <br />
+
                     <div>
-                        <p className='sidenavfootcontent'>Akademi - School Admission Dashboard</p><br />
-                        <p className='sidenavfootcontent2'>Made with <span>♥</span> by Peterdraw</p>
+                        <p className="sidenavfootcontent">Akademi - School Admission Dashboard</p>
+                        <p className="sidenavfootcontent2">Made with <span>♥</span> by Peterdraw</p>
                     </div>
-                    <br />
                 </nav>
 
-
-
-                <div className='homecontent'>
-                    {
-                        (render == "dashboard") ? <Dashboard /> : ''
-                    }
-                    {
-                        (render == "students") ? <Student /> : ''
-                    }
-                    {
-                        (render == "teachers") ? <Teachers /> : ''
-                    }
-                    {
-                        (render == "events") ? <Eventspage /> : ''
-                    }
-                    {
-                        (render == "finance") ? <Finance /> : ''
-                    }
-                    {
-                        (render == "food") ? <Foodpage /> : ''
-                    }
-                    {
-                        (render == "user") ? <Users /> : ''
-                    }
-                    {
-                        (render == "chat") ? <Chat /> : ''
-                    }
-
+                {/* ===== Page Content (ROUTING) ===== */}
+                <div className="homecontent">
+                    <Routes>
+                        <Route index element={<Navigate to="dashboard" replace />} />
+                        <Route path="dashboard" element={<Dashboard />} />
+                        <Route path="students" element={<Student />} />
+                        <Route path="teachers" element={<Teachers />} />
+                        <Route path="events" element={<Eventspage />} />
+                        <Route path="finance" element={<Finance />} />
+                        <Route path="food" element={<Foodpage />} />
+                        <Route path="users" element={<Users />} />
+                        <Route path="chat" element={<Chat />} />
+                    </Routes>
                 </div>
-
-
-
 
             </div>
         </Usercontext.Provider>
-
     )
 }
 

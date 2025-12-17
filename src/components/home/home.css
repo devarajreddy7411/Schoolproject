@@ -50,6 +50,7 @@
     /* height: 100vh; */
 }
 .mobnavlist li{
+  
     cursor: pointer;
     display: flex;
     gap: 15px;
@@ -96,6 +97,9 @@ padding: 15px;
     font-size: 16px;
     font-weight: 500;
     padding: 16px 20px;
+    text-decoration: none;
+      /* background-color: #C1BBEB; */
+    border: 50px 0px 0px 50px;
 }
 .sidenav ul li:hover{
  
@@ -109,7 +113,13 @@ padding: 15px;
     color: rgba(77, 68, 181, 1) !important;
     border-radius: 40px 0px 0px 40px;
 }
-
+.sidenav ul li a{
+    text-decoration: none;
+    color: inherit;
+    &.active{
+        border: none;
+    }
+}
 .sidenavfootcontent{
     font-size: 12px;
     font-weight: 600;
