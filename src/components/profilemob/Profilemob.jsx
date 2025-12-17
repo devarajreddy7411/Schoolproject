@@ -8,7 +8,13 @@ import { useLocation,useNavigate } from 'react-router-dom'
 const Profilemob = () => {
     let navigate = useNavigate();
     let location = useLocation();
-    let userdata = location.state
+    // let userdata = location.state
+    const userdata = {
+  name: 'Admin',
+  userid: 'admin@gmail.com',
+  role: 'Admin'
+}
+
     let [openprofile,setOpenprofile] = useState(false)
     return (<div className='profilemob'>
         

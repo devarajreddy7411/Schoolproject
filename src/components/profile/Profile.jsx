@@ -9,7 +9,13 @@ const Profile = () => {
   let navigate = useNavigate();
 
   let location = useLocation()
-  let userdata = location.state
+  // let userdata = location.state
+  const userdata = {
+  name: 'Admin',
+  userid: 'admin@gmail.com',
+  role: 'Admin'
+}
+
          
   let [openprofile,setOpenprofile] = useState(false);
   // console.log(location.state)

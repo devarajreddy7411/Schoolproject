@@ -14,7 +14,13 @@ import { useLocation, useNavigate } from 'react-router-dom'
 const Users = () => {
 
     let location = useLocation()
-  let userdata = location.state 
+//   let userdata = location.state 
+const userdata = {
+  name: 'Admin',
+  userid: 'admin@gmail.com',
+  role: 'Admin'
+}
+
 
     let [studentdatafile,setStudentdatafile] = useState(stddata);
     let [count,setCount] = useState(4);
